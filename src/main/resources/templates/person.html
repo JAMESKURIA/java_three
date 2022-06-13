@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Person</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="datatables/css/datatablesbootstrap.css" />
+    <link rel="stylesheet" href="datatables/css/datatablesresponsive.css" />
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="datatables/js/datatables.js"></script>
+
+    <script
+      type="text/javascript"
+      src="datatables/js/datatablesbootstrap.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="datatables/js/datatablebuttons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="datatables/js/datatableresponsive.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="datatables/js/datatablescroller.js"
+    ></script>
+
+    <script type="text/javascript" src="js/bootbox.min.js"></script>
+    <script type="text/javascript" src="people/people.js"></script>
+  </head>
+  <body>
+    <form id="person-form">
+      <div class="col-md-8 col-sm-12 mt-4">
+        <input type="hidden" name="personId" id="personId" />
+        <div class="form-row mb-4 ml-1 mr-1">
+          <label class="col-md-3 control-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control col-md-8"
+          />
+        </div>
+        <div class="form-row mb-4 ml-1 mr-1">
+          <label class="col-md-3 control-label" for="phonenumber"
+            >Phonenumber</label
+          >
+          <input
+            name="phonenumber"
+            id="phonenumber"
+            type="text"
+            class="form-control col-md-8"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="form-row mb-4 ml-1 mr-1">
+          <label class="col-md-3 control-label" for="idnumber">ID No</label>
+          <input
+            type="text"
+            name="idnumber"
+            id="idnumber"
+            class="form-control col-md-8"
+          />
+        </div>
+        <div class="form-row mb-4 ml-1 mr-1">&nbsp;</div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="form-row mb-4 ml-1 mr-1">
+          <button type="button" class="btn btn-primary" id="save">Save</button>
+        </div>
+        <div class="form-row mb-4 ml-1 mr-1">&nbsp;</div>
+      </div>
+    </form>
+
+    <div class="col-md-8 col-sm-12 ml-1 mr-1">
+      <div class="table-responsive">
+        <table
+          class="table table-striped display responsive nowrap"
+          id="peoplesTable"
+        >
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">NAME</th>
+              <th scope="col">PHONE</th>
+              <th scope="col">NATIONAL ID</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

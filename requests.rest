@@ -1,0 +1,10 @@
+GET http://localhost:5400/editPerson/1
+
+
+###
+
+
+GET http://localhost:5400/deleteperson/2
+
+
+
